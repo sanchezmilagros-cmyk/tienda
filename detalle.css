@@ -1,0 +1,570 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #0b1220;
+
+  color: #e5e7eb;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+  background-color: #0f172a;
+
+  color: #e5e7eb;
+
+  padding: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+header h1 {
+  margin-bottom: 15px;
+
+  font-size: 30px;
+
+  color: #f3f4f6;
+}
+
+
+/* =========================================
+   NAV
+   ========================================= */
+
+nav ul {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 25px;
+
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+
+  color: #a78bfa;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #8b5cf6;
+}
+
+
+/* =========================================
+   CARRITO DEL NAV
+   ========================================= */
+
+.cart-link a {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 5px;
+}
+
+.material-symbols-outlined {
+  font-size: 25px;
+
+  color: #a78bfa;
+
+  transition: 0.3s;
+}
+
+.cart-link a:hover .material-symbols-outlined {
+  color: #8b5cf6;
+
+  transform: scale(1.1);
+}
+
+
+/* =========================================
+   CONTADOR DEL CARRITO
+   ========================================= */
+
+#contadorcarrito {
+  background-color: crimson;
+
+  color: white;
+
+  width: 22px;
+
+  height: 22px;
+
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  box-shadow: 0 2px 8px rgba(220, 20, 60, 0.5);
+}
+
+
+/* =========================================
+   CONTENEDOR DEL DETALLE
+   ========================================= */
+
+#boxproductos.main-detalle {
+  width: 90%;
+
+  max-width: 1000px;
+
+  margin: 50px auto;
+
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+/* =========================================
+   CARD DEL DETALLE
+   ========================================= */
+
+#boxproductos.main-detalle > div {
+  width: 100%;
+
+  max-width: 850px;
+
+  background: linear-gradient(
+    145deg,
+    #111827,
+    #172033
+  );
+
+  border-radius: 20px;
+
+  padding: 35px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.55),
+    0 0 25px rgba(124, 58, 237, 0.08);
+
+  border: 1px solid rgba(167, 139, 250, 0.12);
+
+  text-align: center;
+
+  transition: 0.3s ease;
+}
+
+#boxproductos.main-detalle > div:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.65),
+    0 0 25px rgba(124, 58, 237, 0.15);
+}
+
+
+/* =========================================
+   TITULO DEL PRODUCTO
+   ========================================= */
+
+#boxproductos h2 {
+  font-size: 32px;
+
+  color: #f3f4f6;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   IMAGEN DEL PRODUCTO
+   ========================================= */
+
+#boxproductos img {
+  width: 350px;
+
+  height: 350px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+
+  margin-bottom: 25px;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.45);
+
+  transition: 0.3s ease;
+}
+
+#boxproductos img:hover {
+  transform: scale(1.03);
+
+  box-shadow:
+    0 10px 25px rgba(124, 58, 237, 0.25);
+}
+
+
+/* =========================================
+   DESCRIPCIÓN
+   ========================================= */
+
+#boxproductos p {
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  color: #9ca3af;
+
+  margin-bottom: 15px;
+}
+
+
+/* =========================================
+   PRECIO
+   ========================================= */
+
+#boxproductos h3 {
+  color: #22c55e;
+
+  font-size: 30px;
+
+  margin: 20px 0;
+
+  font-weight: bold;
+}
+
+
+/* =========================================
+   STOCK
+   ========================================= */
+
+#boxproductos #stock {
+  color: #d1d5db;
+
+  font-size: 15px;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   CONTADOR
+   ========================================= */
+
+#btncontador {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin: 20px 0;
+}
+
+#btncontador button {
+  background-color: #7c3aed;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+#btncontador button:hover {
+  background-color: #5b21b6;
+
+  transform: translateY(-2px);
+}
+
+#cantidad {
+  font-size: 20px;
+
+  font-weight: bold;
+
+  min-width: 30px;
+
+  color: #e5e7eb;
+}
+
+
+/* =========================================
+   BOTÓN AGREGAR AL CARRITO
+   ========================================= */
+
+#btnagregar {
+  width: 100%;
+
+  max-width: 400px;
+
+  margin: 15px auto 0;
+
+  display: block;
+
+  background-color: #22c55e;
+
+  color: #0b1220;
+
+  font-weight: bold;
+
+  font-size: 16px;
+
+  padding: 14px 20px;
+
+  border-radius: 10px;
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+#btnagregar:hover {
+  background-color: #16a34a;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 7px 20px rgba(34, 197, 94, 0.25);
+}
+
+#btnagregar:active {
+  transform: scale(0.97);
+}
+
+
+/* =========================================
+   BOTONES GENERALES
+   ========================================= */
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  background-color: #0f172a;
+
+  color: #e5e7eb;
+
+  text-align: center;
+
+  padding: 25px;
+
+  margin-top: auto;
+
+  box-shadow:
+    0 -4px 15px rgba(0, 0, 0, 0.25);
+}
+
+footer h2 {
+  margin-bottom: 10px;
+
+  color: #f3f4f6;
+}
+
+footer p {
+  color: #9ca3af;
+
+  margin: 5px 0;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  nav ul {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  #boxproductos.main-detalle {
+    width: 95%;
+
+    margin: 30px auto;
+  }
+
+  #boxproductos.main-detalle > div {
+    padding: 25px 20px;
+  }
+
+  #boxproductos h2 {
+    font-size: 26px;
+  }
+
+  #boxproductos img {
+    width: 280px;
+
+    height: 280px;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULAR
+   ========================================= */
+
+@media (max-width: 450px) {
+
+  header {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  #boxproductos.main-detalle {
+    margin: 20px auto;
+  }
+
+  #boxproductos.main-detalle > div {
+    padding: 20px 15px;
+
+    border-radius: 15px;
+  }
+
+  #boxproductos h2 {
+    font-size: 23px;
+
+    margin-bottom: 20px;
+  }
+
+  #boxproductos img {
+    width: 220px;
+
+    height: 220px;
+  }
+
+  #boxproductos p {
+    font-size: 15px;
+  }
+
+  #boxproductos h3 {
+    font-size: 26px;
+  }
+
+  #btnagregar {
+    font-size: 15px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}
+
+/* CONTROLES DE CANTIDAD DEL DETALLE (+ y -)
+   Los botones del HTML están dentro de #boxcontador. */
+#boxcontador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 22px auto;
+}
+
+#boxcontador button {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: 2px solid #22c55e;
+  border-radius: 12px;
+  background: #22c55e;
+  color: #0b1220;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.22);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#boxcontador button:hover {
+  background: #16a34a;
+  border-color: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px rgba(34, 197, 94, 0.3);
+}
+
+#boxcontador button:active {
+  transform: scale(0.94);
+}
+
+#boxcontador #contador {
+  min-width: 28px;
+  margin: 0;
+  color: #f3f4f6;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  #boxcontador button {
+    width: 40px;
+    height: 40px;
+  }
+}

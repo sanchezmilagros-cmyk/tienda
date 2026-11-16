@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0b1220;
+  color: #e5e7eb;
+}
+
+/* HEADER */
+header {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 15px;
+}
+
+/* NAV */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #a78bfa;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #7c3aed;
+}
+
+/* CONTENEDOR PRODUCTOS */
+#boxproductos {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+
+  justify-items: center;
+  align-items: start;
+}
+
+
+
+/* CARD PRODUCTO (SIN CAMBIAR ESTRUCTURA) */
+#boxproducto {
+  background-color: #111827;
+  width: 300px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+#boxproducto:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.65);
+}
+
+/* TITULO */
+#nombre {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #e5e7eb;
+}
+
+/* IMAGEN (solo mejora estética) */
+#imgproducto {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* DETALLE */
+#detalle {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #9ca3af;
+}
+
+/* PRECIO */
+#precio {
+  color: #22c55e;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* STOCK */
+#stock {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+/* CONTADOR (NO TOCO TU JS NI IDS) */
+#btncontador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+#btncontador button {
+  background-color: #7c3aed;
+  color: #e5e7eb;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#btncontador button:hover {
+  background-color: #5b21b6;
+}
+
+#cantidad {
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 25px;
+}
+
+/* BOTÓN AGREGAR (NO CAMBIO ID) */
+#btnagregar {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #22c55e;
+  color: #0b1220;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#btnagregar:hover {
+  background-color: #16a34a;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #boxproducto {
+    width: 90%;
+  }
+}
+
+/* BOTÓN VER DETALLE (solo estilo, no toca función) */
+#btdetalle,
+button {
+  background-color: #7c3aed;
+  color: #e5e7eb;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+/* hover lindo */
+#btdetalle:hover,
+button:hover {
+  background-color: #5b21b6;
+  transform: translateY(-2px);
+}
+
+/* click */
+#btdetalle:active,
+button:active {
+  transform: scale(0.97);
+}
+
+
+#contadorcarrito{
+  background-color: crimson;
+  width: 20px;
+}
+
+
+
